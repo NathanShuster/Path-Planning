@@ -1,7 +1,7 @@
 ﻿Path Generation:
 
 
-I mostly followed the video example of how to use a spline to draw the xy waypoints.
+The key to this project is using a spline to model a viable path. A walkthrough of the method is detailed below.
 
 
 To save computational power, this model frequently reuses the previous iterations projections. However, in the first iteration and further instances where data is scarce, we have to create our own. Thus the path generation algorithm begins by finding the point where it would’ve just been given it’s current orientation and angle, and uses that as a reference point.
